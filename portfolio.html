@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunil's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      color: #fff;
+      padding: 2rem 0 1rem;
+      text-align: center;
+    }
+    .profile-container {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .profile-container img.profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+    .profile-container img.badge {
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: #fff;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+    nav a:hover {
+      color: #ffd600;
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: scale(1.01);
+    }
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #0d47a1;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .social-links a:hover {
+      background: #1565c0;
+    }
+    .toggle-btn {
+      background-color: #0d47a1;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      border-radius: 5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .toggle-btn:hover {
+      background-color: #1565c0;
+    }
+    .hidden {
+      display: none;
+    }
+    .intro-text {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .download-btn, .view-btn {
+      background-color: #0d47a1;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 5px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+    .download-btn:hover, .view-btn:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-container">
+      <img src="mine.jpg" alt="Profile Photo" class="profile-pic" />
+      <img src="azure-ai-fundamentals-600x600.png" alt="Azure AI Badge" class="badge" />
+    </div>
+    <h1>Sannapaneni Sunil</h1>
+    <p class="intro-text">Aspiring Software Developer | AI & ML Enthusiast | Problem Solver</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center;">B.Tech in Computer Science and Engineering (AI & ML) (2022–2026)<br>Alliance University, Bengaluru<br>Passionate about AI, ML, and real-world application development.</p>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li><strong>Languages:</strong> Python, MySQL</li>
+      <li><strong>Tools:</strong> VsCode, Git, Power BI (Basics)</li>
+      <li><strong>Concepts:</strong> Deep Learning, Computer Vision, Data Analysis</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <button class="toggle-btn" onclick="toggleSection('projectsList')">Toggle Projects</button>
+    <ul id="projectsList">
+      <li><strong>Story Generation Web App</strong> – Built using DistilGPT-2, Streamlit & HuggingFace<br>
+        <a href="https://github.com/sunil11122251/streamlit-story-gen" target="_blank">GitHub Repo</a>
+      </li>
+      <li><strong>AQI Prediction with XGBoost</strong> – ML model with SHAP explanations and visualizations<br>
+        <a href="https://github.com/sunil11122251/aqi_prediction_project/" target="_blank">GitHub Repo</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="https://www.credly.com/badges/91e828dd-24e7-4639-8b58-0a57a31df385" target="_blank">Azure AI Fundamentals – Microsoft (2025)</a></li>
+      <li><a href="https://coursera.org/verify/ZH2GA6447CVC" target="_blank">Machine Learning with Python – IBM (2024)</a></li>
+      <li><a href="https://coursera.org/verify/32TG6RNJQWWB" target="_blank">Relational Database Design – University of Colorado Boulder (2023)</a></li>
+      <li><a href="https://coursera.org/verify/9MPJW2BRN23G" target="_blank">Deep Learning for Healthcare – University of Illinois Urbana-Champaign (2024)</a></li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Silver Medal – National Talent Test</li>
+      <li>Participated in India's Biggest Career Aptitude Test – Naukri Campus 2025</li>
+      <li>Participated in Internship Common Aptitude Test</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="btn-container">
+      <a href="Sunil_Resume.pdf" target="_blank" class="view-btn">📄 View Resume</a>
+      <a href="Sunil_Resume.pdf" download class="download-btn">⬇️ Download Resume</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align:center;">Email: <a href="mailto:sunil11122251@gmail.com">sunil11122251@gmail.com</a><br>Phone: +91-6305490050</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/sunil-sannapaneni-82a72a2b0/">LinkedIn</a>
+      <a href="https://github.com/sunil11122251/">GitHub</a>
+      <a href="https://leetcode.com/u/SannapaneniSunil/">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/sannapanenisunil">HackerRank</a>
+      <a href="https://www.stopstalk.com/user/profile/sunil17082004">StopStalk</a>
+    </div>
+  </section>
+
+  <script>
+    function toggleSection(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
