@@ -36,17 +36,19 @@
     }
     .profile-container img.badge {
       position: absolute;
-      bottom: -6px;
-      right: -6px;
-      width: 40px;
-      height: 40px;
+      bottom: 5px;
+      right: 5px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       border: 2px solid #fff;
       background: #fff;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
     h1 {
       font-size: 1.8rem;
+      margin-top: 10px;
       margin-bottom: 8px;
     }
     nav {
@@ -128,6 +130,10 @@
       text-align: center;
       margin-bottom: 10px;
     }
+    ul ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
@@ -152,9 +158,9 @@
     <p style="text-align:center;">B.Tech in Computer Science and Engineering (AI & ML) (2022–2026)<br>Alliance University, Bengaluru<br>Passionate about AI, ML, and real-world application development.</p>
     <h3>Technical Skills</h3>
     <ul>
-      <li><strong>Languages:</strong> Python, MySQL</li>
-      <li><strong>Tools:</strong> VsCode, Git, Power BI (Basics)</li>
-      <li><strong>Concepts:</strong> Deep Learning, Computer Vision, Data Analysis</li>
+      <li><strong>Languages:</strong> Python, Java (Basics)</li>
+      <li><strong>Database Technologies:</strong> MySQL</li>
+      <li><strong>Tools/Platforms:</strong>GitHub, VS Code, Power BI (Basics)</li>
     </ul>
   </section>
 
@@ -162,11 +168,32 @@
     <h2>Projects</h2>
     <button class="toggle-btn" onclick="toggleSection('projectsList')">Toggle Projects</button>
     <ul id="projectsList">
-      <li><strong>Story Generation Web App</strong> – Built using DistilGPT-2, Streamlit & HuggingFace<br>
-        <a href="https://github.com/sunil11122251/streamlit-story-gen" target="_blank">GitHub Repo</a>
+      <li>
+        <strong>Story Generation Web App</strong> – Python, Streamlit, HuggingFace, DistilGPT-2
+        <ul>
+          <li>Developed a generative AI web app that crafts creative stories from user prompts.</li>
+          <li>Used DistilGPT-2 for language generation and deployed using Streamlit.</li>
+          <li>Designed interactive UI for real-time user interaction.</li>
+          <li><a href="https://github.com/sunil11122251/streamlit-story-gen" target="_blank">GitHub Repo</a></li>
+        </ul>
       </li>
-      <li><strong>AQI Prediction with XGBoost</strong> – ML model with SHAP explanations and visualizations<br>
-        <a href="https://github.com/sunil11122251/aqi_prediction_project/" target="_blank">GitHub Repo</a>
+      <li>
+        <strong>AQI Prediction with XGBoost</strong> – Python, XGBoost, SHAP, Matplotlib
+        <ul>
+          <li>Built a model to predict Air Quality Index using environmental features.</li>
+          <li>Used SHAP for model explainability and visualized feature contributions.</li>
+          <li>Achieved high accuracy and clear interpretability with graphs and plots.</li>
+          <li><a href="https://github.com/sunil11122251/aqi_prediction_project/" target="_blank">GitHub Repo</a></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Student Portfolio Website</strong> – HTML, CSS, JavaScript, GitHub Pages
+        <ul>
+          <li>Created a personal portfolio to display skills, projects, and contact information.</li>
+          <li>Hosted the site publicly via GitHub Pages with QR code integration.</li>
+          <li>Responsive design optimized for both desktop and mobile views.</li>
+          <li><a href="https://sunil11122251.github.io/Portfolio/" target="_blank">Live Portfolio</a></li>
+        </ul>
       </li>
     </ul>
   </section>
@@ -174,19 +201,19 @@
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li><a href="https://www.credly.com/badges/91e828dd-24e7-4639-8b58-0a57a31df385" target="_blank">Microsoft Azure AI Fundamentals – Cretiport (2025)</a></li>
-      <li><a href="https://coursera.org/verify/ZH2GA6447CVC" target="_blank">Machine Learning with Python – IBM (2024)</a></li>
-      <li><a href="https://coursera.org/verify/32TG6RNJQWWB" target="_blank">Relational Database Design – University of Colorado Boulder (2023)</a></li>
-      <li><a href="https://coursera.org/verify/9MPJW2BRN23G" target="_blank">Deep Learning for Healthcare – University of Illinois Urbana-Champaign (2024)</a></li>
+      <li>Azure AI Fundamentals – Microsoft Learn – 2025</li>
+      <li>Machine Learning with Python – IBM via Coursera – 2024</li>
+      <li>Deep Learning for Healthcare – University of Illinois Urbana-Champaign – 2024</li>
+      <li>Relational Database Design – University of Colorado Boulder – 2023</li>
     </ul>
   </section>
 
   <section id="achievements">
     <h2>Achievements</h2>
     <ul>
+      <li>Participated in India's Biggest Career Aptitude Test – Naukri Campus – 2025</li>
+      <li>Participated in Internship Common Aptitude Test – Internship Studio – 2025</li>
       <li>Silver Medal – National Talent Test</li>
-      <li>Participated in India's Biggest Career Aptitude Test – Naukri Campus 2025</li>
-      <li>Participated in Internship Common Aptitude Test</li>
     </ul>
   </section>
 
